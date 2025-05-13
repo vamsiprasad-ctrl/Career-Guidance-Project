@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Recommendation</title>
+  <link rel="stylesheet" href="recommendation.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">CareerGuide</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="recommendation.html" class="active">Recommend Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <h2>Career Recommendation Form</h2>
+    <form id="careerForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="number" placeholder="Your Age" required />
+      <select required>
+        <option value="">Select Education Level</option>
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="Graduate">Graduate</option>
+      </select>
+
+      <label>Your Favorite Subjects:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Math" /> Math</label>
+        <label><input type="checkbox" value="Science" /> Science</label>
+        <label><input type="checkbox" value="Art" /> Art</label>
+        <label><input type="checkbox" value="Commerce" /> Commerce</label>
+        <label><input type="checkbox" value="Coding" /> Coding</label>
+      </div>
+
+      <label>Future Goal:</label>
+      <textarea placeholder="Write what you want to become..." required></textarea>
+
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="recommendationResult" class="result-box"></div>
+  </section>
+
+  <script src="recommendation.js"></script>
+</body>
+</html>

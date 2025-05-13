@@ -1,0 +1,151 @@
+/* Body and Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #00b4d8, #0096c7); /* Soft Blue Gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; /* Set default text color to white for contrast */
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(26, 26, 46, 0.8); /* Dark Transparent Background */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links li a.active {
+    color: #00adb5;
+  }
+  
+  /* Career Paths Section */
+  .career-paths {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light Background for Content */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around content */
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .career-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .career-category {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .career-category:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  .career-category h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .career-category p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  button.toggle-btn {
+    padding: 12px 25px;
+    background-color: #00adb5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.toggle-btn:hover {
+    background-color: #007b8c;
+  }
+  
+  .career-detail {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    color: #444;
+  }
+  
+  .career-detail ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .career-detail ul li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .career-categories {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Smooth transition for career detail visibility */
+  .career-category .career-detail.open {
+    display: block;
+    max-height: 500px;
+  }
+  

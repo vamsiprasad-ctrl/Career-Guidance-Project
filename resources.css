@@ -1,0 +1,150 @@
+/* Body and Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b); /* Soft Gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; 
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(26, 26, 46, 0.8); 
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links li a.active {
+    color: #ff7e5f;
+  }
+  
+  /* Resources Section */
+  .resources {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .resource-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .resource-category {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .resource-category:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resource-category h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .resource-category p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  button.toggle-btn {
+    padding: 12px 25px;
+    background-color: #ff7e5f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.toggle-btn:hover {
+    background-color: #feb47b;
+  }
+  
+  .resource-detail {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    color: #444;
+  }
+  
+  .resource-detail ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .resource-detail ul li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .resource-categories {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .resource-category .resource-detail.open {
+    display: block;
+    max-height: 500px;
+  }
+  
